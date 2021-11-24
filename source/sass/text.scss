@@ -1,0 +1,15 @@
+.text {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 24px;
+
+    &--fs20 {
+        font-size: 20px;
+        line-height: 30px;
+
+        @include before_768 {
+            font-size: 16px;
+            line-height: 22px;
+        }
+    }
+}

@@ -1,22 +1,4 @@
-.main__title {
-    position: relative;
-    width: 750px;
-    margin: 0 auto;
-    padding-top: 300px;
-    font-size: 34px;
-    text-align: center;
+.main {
+    flex-grow: 1;
 }
 
-.icon-address {
-    @include flex-block;
-    fill: pink;
-}
-
-.slider {
-    width: 800px;
-    margin: 0 auto;
-}
-
-.slider__item {
-    padding-top: 56.25%;
-}

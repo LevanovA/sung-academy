@@ -1,0 +1,27 @@
+.breadcrumbs {
+    padding-top: 48px;
+
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+
+        &:not(:last-child) {
+            margin-right: 15px;
+        }
+    }
+
+    &__link {
+        font-size: 16px;
+        line-height: 22px;
+        color: #a3b0c1;
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+        transition: 0.5s;
+
+        &:hover {
+            border-bottom: 1px solid #a3b0c1;
+        }
+    }
+}

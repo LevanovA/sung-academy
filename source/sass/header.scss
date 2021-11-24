@@ -1,0 +1,57 @@
+.header {
+    background-color: #951a1d;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__el {
+        flex-grow: 3;
+
+        &--map {
+            display: flex;
+            justify-content: flex-end;
+            flex-grow: 2
+        }
+    }
+
+    &__logo {
+        max-width: 537px;
+        height: auto;
+        margin-right: 24px;
+    }
+
+    &__map {
+        max-width: 342px;
+        height: auto;
+    }
+
+    &__text {
+        display: flex;
+        justify-content: center;
+        flex-grow: 1;
+        margin-right: 24px;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 50px;
+        color: #ffffff;
+        text-transform: uppercase;
+
+        @include before_1024 {
+            font-size: 30px;
+            line-height: 40px;
+        }
+
+        @include before_768 {
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+        @include before_768 {
+            font-size: 14px;
+            line-height: 18px;
+        }
+    }
+}

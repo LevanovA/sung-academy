@@ -1,14 +1,14 @@
 .button {
     @include flex-block;
-    width: 250px;
-    height: 60px;
+    width: 100%;
+    height: 40px;
 
-    font-size: 24px;
-    line-height: 28px;
-    color: #ffffff;
+    font-size: 18px;
+    line-height: 24px;
+    color: $border-main-c;
     text-decoration: none;
 
-    background-color: $button-main-c;
+    background-color: #ffffff;
     border: 2px solid $border-main-c;
     border-radius: 10px;
 
@@ -18,8 +18,8 @@
     transition: 0.5s;
 
     &:hover {
-        color: $button-main-c;
-        background-color: $button-hover-c;
+        color: #ffffff;
+        background-color: $border-main-c;
     }
 
     &:active {
@@ -30,8 +30,13 @@
     &:focus {
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2)
     }
-}
 
-.button--modal-open {
-    margin-bottom: 30px;
+    &--cards {
+        text-transform: uppercase;
+
+        @include before_768 {
+            font-size: 16px;
+            line-height: 22px;
+        }
+    }
 }
