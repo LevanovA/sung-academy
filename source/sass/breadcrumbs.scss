@@ -1,18 +1,29 @@
 .breadcrumbs {
     padding-top: 48px;
+    margin-bottom: 48px;
 
     &__list {
         display: flex;
+
+        @include before_1024 {
+            flex-direction: column;
+            align-items: flex-start;
+        }
     }
 
     &__item {
 
         &:not(:last-child) {
             margin-right: 15px;
+
+            @include before_1024 {
+                margin-right: 0;
+            }
         }
     }
 
     &__link {
+        display: block;
         font-size: 16px;
         line-height: 22px;
         color: #a3b0c1;
@@ -22,6 +33,17 @@
 
         &:hover {
             border-bottom: 1px solid #a3b0c1;
+        }
+
+        &--no-link {
+
+            @include before_1024 {
+                transform: rotate(90deg);
+            }
+
+            &:hover {
+                border-bottom: 1px solid transparent;
+            }
         }
     }
 }

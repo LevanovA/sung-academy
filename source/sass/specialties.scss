@@ -1,0 +1,76 @@
+.specialties {
+    padding: 80px 0 60px;
+    background-color: #cad5cf;
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -20px;
+
+        @include before_1200 {
+            margin: 0 -20px;
+        }
+
+        @include before_768 {
+            margin: 0;
+        }
+    }
+
+    &__item {
+        width: 33.33%;
+        margin-bottom: 40px;
+        padding: 0 20px;
+
+        @include before_1024 {
+            width: 50%;
+        }
+
+        @include before_768 {
+            width: 100%;
+            padding: 0;
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding: 30px;
+        background-color: #ffffff;
+        box-shadow: 0 0 20px rgba(0,0,0,0.3);
+        border-radius: 2px;
+    }
+
+    &__title {
+        margin-bottom: 12px;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 30px;
+        color: #951a1d;
+        text-transform: uppercase;
+    }
+
+    &__directions {
+        margin-bottom: 12px;
+        font-size: 16px;
+        line-height: 22px;
+        color: #a3b0c1;
+    }
+
+    &__name {
+        margin-bottom: 12px;
+    }
+
+    &__link {
+        font-size: 20px;
+        line-height: 30px;
+        color: #4d515b;
+        text-decoration: none;
+        border-bottom: 1px solid black;
+        transition: 0.5s;
+
+        &:hover {
+            border-bottom: 1px solid transparent;
+        }
+    }
+}

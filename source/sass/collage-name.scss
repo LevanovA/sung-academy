@@ -1,0 +1,17 @@
+.collage-name {
+    margin-bottom: 48px;
+
+    &__block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 400px;
+        padding: 30px 40px;
+        background-color: #005a48;
+    }
+
+    &__img {
+        max-width: 200px;
+    }
+}

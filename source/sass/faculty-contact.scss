@@ -1,0 +1,48 @@
+.faculty-contact {
+    padding: 60px 0;
+
+    &__description {
+        margin-bottom: 36px;
+        font-size: 20px;
+        line-height: 30px;
+        color: #787c83;
+    }
+
+    &__title {
+        margin-bottom: 24px;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 30px;
+        color: #3c414c;
+        text-transform: uppercase;
+    }
+
+    &__block {
+        margin-bottom: 24px;
+    }
+
+    &__text {
+        font-size: 18px;
+        line-height: 24px;
+        color: #3c414c;
+
+        &--flex {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    &__link {
+        font-size: 18px;
+        line-height: 24px;
+        color: #3c414c;
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+        transition: 0.5s;
+
+        &:hover {
+            border-bottom: 1px solid #3c414c;
+        }
+    }
+}
